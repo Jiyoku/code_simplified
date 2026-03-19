@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>发布商品</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">📤 发布商品</h1>
+
+    <div id="messageArea"></div>
+
+    <form id="uploadForm">
+        <input type="text" id="name" placeholder="商品名称" required>
+        <input type="number" id="price" placeholder="价格" required>
+        <input type="number" id="old_price" placeholder="原价">
+        <input type="date" id="old_time">
+        <input type="text" id="classification" placeholder="磨损程度">
+        <input type="number" id="quantity" placeholder="数量">
+        <textarea id="description" placeholder="商品描述"></textarea>
+        <input type="file" id="img" accept="image/*">
+
+        <button type="submit">发布商品</button>
+        <a href="index.html">返回首页</a>
+    </form>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/components.js"></script>
+<script src="js/upload.js"></script>
+</body>
+</html>
